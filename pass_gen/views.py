@@ -18,7 +18,7 @@ def password(request):
     if request.GET.get('number'):
         characters += (numbers)
     if request.GET.get('spl_chr'):
-        characters += '~`!@#$%^&*()_-+={}[]:;<>,.?/|\\'
+        characters += '!@#$%^&*()_-+?'
     length = int(request.GET.get('length', 12))
     thepassword = ''
     # characters = random.shuffle(list(characters))
